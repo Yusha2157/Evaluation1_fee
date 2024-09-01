@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Content feed</title>
+    <link rel="stylesheet" href="css styles/Contentfeed.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <h1>Coming soon.....</h1>
+    <div class="cf-landingpage">
+        <nav>
+            <div class="cf-navbar">
+                <ul>
+                    <li>Home</li>
+                    <li>Categories</li>
+                    <li>Trending</li>
+                    <li>Most Popular</li>
+                    <li>Dashboard</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cflp-start">
+            <div class="cflpsleft">
+                <h1>INTER<span>LINK</span></h1>
+                <div class="cfsearchbox">
+                    <div class="cfsearchbar">
+                        <input type="text" name="SearchBar" id="cfsearchbar" onclick="showTopSearch()">
+                        <div class="cfsearchicon">
+                            <i class="material-icons" style="font-size: 40px;color: black;">search</i>
+                        </div>
+                    </div>
+
+                    <div class="topsearches">
+
+                   </div>
+                   <button class="watchcontent" onclick="ImageSlide()">
+                    Watch Content <i class="material-icons" style="font-size: 28px; color: black;">arrow_forward</i>
+                   </button>
+                </div>
+            </div>
+            <div class="cflpsright">
+                <div class="slideshowmask">
+                    <!-- <img src="Images/spiderman.webp" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/Cf.js"></script>
 </body>
 </html>

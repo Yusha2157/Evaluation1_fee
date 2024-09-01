@@ -1,0 +1,134 @@
+body{
+    background-color: #17153B;
+}
+.cf-landingpage{
+    width: 100%;
+}
+.cf-navbar{
+    width: 100%;
+    height: 90px;
+}
+.cf-navbar ul{
+    display: flex;
+    width: 40%;
+    margin: 0 auto;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 50px;
+}
+.cf-navbar ul li{
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 2.5em 0.4em 0.8rem;
+}
+.cf-navbar ul li:hover{
+    cursor: pointer;
+    color: #C8ACD6;
+}
+.cflp-start{
+    height: 500px;
+    width: 84%;
+    border-radius: 50px;
+    margin: 0 8%;
+    background: #2E236C;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+.cflpsleft h1{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin: 40px 0;
+}
+.cflpsleft{
+    margin: 45px 70px;
+    width: 50%;
+}
+.cflpsleft h1 span{
+    color: rgba(227, 13, 220, 0.899);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cfsearchbox{
+    width: 100%;
+}
+.cfsearchbar{
+    display: flex;
+    align-items: center;
+}
+.cfsearchicon{
+    background: rgba(222, 49, 152, 0.904);
+    width: 60px;
+    height: 60px;
+    border: black 1px solid;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+#cfsearchbar{
+    width: 50%;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+.topsearches{
+    width: 100%;
+}
+.topsearches p{
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.topsearches ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.topsearches ul li{
+    margin: 10px 0.3rem;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.topsearches ul li:hover{
+    cursor: pointer;
+    color: #da8ad6;
+}
+.watchcontent{
+    background: #da8ad6;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px black solid;
+    width: 220px;
+    height: 60px;
+    margin: 1.8rem 0;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+.cflpsright{
+    /* background-image: url('../Images/cricket.webp'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%);
+}
+.slideshowmask{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    background: linear-gradient(To right,rgba(0, 0, 0, 0.841),rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0));
+}
