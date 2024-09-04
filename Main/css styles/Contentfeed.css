@@ -24,7 +24,11 @@ body{
     color: white;
     margin: 2.5em 0.4em 0.8rem;
 }
-.cf-navbar ul li:hover{
+.cf-navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.cf-navbar ul li a:hover{
     cursor: pointer;
     color: #C8ACD6;
 }

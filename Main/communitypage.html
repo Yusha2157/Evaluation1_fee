@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community 1</title>
     <link rel="stylesheet" href="css styles/community1.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>  
     <div class="chat-container">
@@ -12,10 +13,10 @@
             <h2>Community 1</h2>
             <div class="header-actions">
                 <button class="header-btn">Search</button>
-                <button class="header-btn">Settings</button>
+                <button class="header-btn"><a href="Homepage.html">Home</a></button>
             </div>
         </div>
-        <div class="chat-messages">
+        <div class="chat-messages" id="chatMessages">
             <div class="message-item">
                 <div class="message-content">
                     <p>Welcome to Community 1! This is a great place to connect and share.</p>
@@ -30,7 +31,7 @@
             </div>
         </div>
         <div class="chat-input">
-            <textarea placeholder="Type your message..."></textarea>
+            <textarea id="chatInput" placeholder="Type your message..."></textarea>
             <button class="send-btn">Send</button>
             <div class="input-actions">
                 <button class="action-btn"><img src="images/attach.png" alt="Attach"></button>
@@ -39,5 +40,6 @@
             </div>
         </div>
     </div>
+    <script src="javascript/chatscript.js"></script>
 </body>
 </html>

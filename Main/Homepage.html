@@ -6,49 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media</title>
     <link rel="stylesheet" href="css styles/Homepage.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
 
         <div class="content">
-            <section class="communities">
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 1</div>
+            <h1>Your Communities</h1>
+            <div class="communities">
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/batman.jpeg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/anime.jpg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/chess.jpg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/bgmi.jpg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/deadpool.jpg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/football.jpeg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/naruto.jpg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/random.jpeg" alt="">
+                    </div>
+                    <div class="community-circle" onclick="OpenCom()">
+                        <img src="images/pokemon.jpeg" alt="">
+                    </div>
                 </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 2</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 3</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 4</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 5</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 6</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 7</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 8</div>
-                </a>
-                <a href="communitypage.html" class="community-link">
-                    <div class="community-circle">Community 9</div>
-                </a>
-            </section>
+            </div>
         </div>
+
+        <nav class="navbar">
+            <div class="userprofile" onclick="openProf()">
+                <img src="javascript/Images/profile_pic.jpg" alt="">
+            </div>
+            <ul>
+                <li><i class="material-icons" style="font-size: 32px;"><a href="#home">home</a></i></li>
+                <li><i class="material-icons" style="font-size: 32px;"><a href="Contentfeed.html">view_quilt</a></i></li>
+                <li><i class="material-icons" style="font-size: 32px;"><a href="friends.html">people</a></i></li>
+                <li><i class="material-icons" style="font-size: 32px;"><a href="communitypage.html">chat</a></i></li>
+            </ul>
+            <button class="signup">
+                <a href="login.html">Login</a>
+            </button>
+        </nav>
     </div>
+    <script>
+        function OpenCom(){
+            window.location.href = "communitypage.html";
+        }
+        function openProf(){
+            window.location.href = "Userprofile.html";
+        }
+    </script>
 </body>
 </html>

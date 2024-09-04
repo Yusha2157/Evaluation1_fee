@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5; 
+    background-color: #17153B; 
 }
 
 .container {
@@ -10,41 +10,70 @@ body {
 }
 
 .content {
-    flex: 1;
+    width: fill;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
     padding: 20px;
     text-align: center;
 }
-
+.content h1{
+    color: white;
+    font-size: 38px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .navbar {
-    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 100px;
     background-color: #333;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li {
-    margin: 20px 0;
-}
-
-.navbar ul li a {
-    color: #fff;
+.navbar ul{
+    /* width: 100%; */
+    list-style: none;
     text-decoration: none;
-    padding: 10px 20px;
-    display: block;
 }
 
-.navbar ul li a:hover {
-    background-color: #575757;
+.navbar ul li{
+    width: 100%;
+    padding: 10px 0;
+    text-align: left;
 }
+.navbar ul li i{
+    width: 100%;
+}
+.navbar ul li i a{
+    text-decoration: none;
+    margin: 1.3rem 0;
+    color: white;
+    font-size: 34px;
+    transition: all ease .5s;
+}
+.navbar ul li i a:hover{
+    transform: scale(1.2);
+    color: #da8ad6;
+}
+.signup{
+    height: 40px;
+    width: 80%;
+    margin: 10%;
+    background: #333;
+}
+.signup a{
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
 
+}
 .navbar-toggle {
     display: none;
     position: fixed;
@@ -57,39 +86,48 @@ body {
     cursor: pointer;
     font-size: 18px;
 }
+.userprofile{
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 0 0 12px;
+    transition: all ease-in-out .5s;
+    border: 2px #da8ad6 solid; 
+}
+.userprofile img{
+    height: 100%;
+    width: auto;
+}
+.userprofile:hover{
+    transform: scale(1.1);
+    cursor: pointer;
 
+}
 /* Communities Styling */
 .communities {
+    width: 60%;
+    height: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    padding: 20px;
-    gap: 30px;
-    position: relative;
-    overflow-y: auto; /* Allows scrolling if too many communities */
-    background: linear-gradient(to bottom, #e0e7ff, #f3e5f5); /* Gradient background */
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.community-link {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
+    margin: 18px;
     align-items: center;
     position: relative;
-    width: 120px;
-    height: 120px;
+    background: #2E236C; 
+    border-radius: 25px;
+    border: 1px solid #010a2d;
+    overflow-y: auto; 
     overflow: hidden;
+    -ms-overflow-style: none;
 }
-
 .community-circle {
-    width: 100%;
-    height: 100%;
+    border: 1px #190a6c solid;
+    margin: 0.3rem;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    background: radial-gradient(circle, #fff, #ddd);
+    background: chocolate;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,10 +136,15 @@ body {
     color: #333;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
     position: relative;
+    overflow: hidden;
 }
+.community-circle img{
+    height: 140px;
+    width: auto;
 
+}
 .community-circle::before {
     content: "";
     position: absolute;
@@ -125,8 +168,8 @@ body {
 
 .community-circle:hover {
     transform: translateY(-10px) scale(1.1);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3); */
+    /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb); */
 }
 
 .community-circle::after {
