@@ -1,0 +1,105 @@
+:root {
+    --mainBackground: #091921;
+    --headingFont: "Rubik Wet Paint", system-ui;
+    --secondaryFont: "Comic Neue", cursive;
+    --mainFont: "Irish Grover", system-ui;
+    --hoverEffectColor: rgba(255, 255, 255, 0.1);
+    --primaryColor: rgb(231, 83, 38);
+}
+
+body {
+    background-color: var(--mainBackground);
+    font-family: var(--mainFont);
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: var(--headingFont);
+    color: var(--primaryColor);
+}
+
+#searchBar, #sortSelect {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.community-categories {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.community-categories button {
+    padding: 10px;
+    margin: 5px;
+    background-color: var(--primaryColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+#communityList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.community-item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #1b2b34;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.community-item:hover {
+    background-color: var(--hoverEffectColor);
+    cursor: pointer;
+}
+
+.community-info {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #23343f;
+    border-radius: 8px;
+}
+
+.community-info p {
+    margin: 5px 0;
+}
+
+button.join-btn {
+    background-color: var(--primaryColor);
+    padding: 8px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.join-btn:hover {
+    background-color: #ff5722;
+}
+.home
+{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 32px;
+    color: #fff;
+    z-index: 1001;
+}

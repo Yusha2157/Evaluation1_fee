@@ -2,71 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media</title>
-    <link rel="stylesheet" href="css styles/Homepage.css"> 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="./css styles/Homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
+    <section>
+        <nav>
+            <div class="sidebar">
+                <div class="sidebar_top_wrapper">
+                    <div class="logo_wrapper">
+                        <h1>
+                            
+                            <span class="sidebar_list_elements">INT<span class="interlink_highlight">E</span>RL<span class="interlink_highlight">INK</span></span>
+                        </h1>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-house"></i>
+                                <span class="sidebar_list_elements">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Contentfeed.html">
+                                <i class="fa fa-fire"></i>
+                                <span class="sidebar_list_elements">Explore link</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Userprofile.html">
+                                <i class="fa fa-object-ungroup"></i>
+                                <span class="sidebar_list_elements">User Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="friends.html">
+                                <i class="fa fa-people-pulling"></i>
+                                <span class="sidebar_list_elements">My links</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-cogs"></i>
+                                <span class="sidebar_list_elements">Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Login.html">
+                                <i class="fa fa-arrow-right-to-bracket"></i>
+                                <span class="sidebar_list_elements">Log In</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <div class="content">
-            <h1>Your Communities</h1>
-            <div class="communities">
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/batman.jpeg" alt="">
+                <div class="sidebar_bottom_wrapper">
+                    <div class="search_wrapper">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="sidebar_list_elements">
+                            <input type="text" name="" id="" placeholder="Search ...">
+                        </span>
                     </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/anime.jpg" alt="">
+
+                    <div class="profile_wrapper">
+                        <img src="" alt="">
+                        <div class="toggle_mode">
+
+                        </div>
                     </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/chess.jpg" alt="">
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="container_overlay">
+                <div class="container_wrapper">
+                    <div class="navbar">
+                        <div class="expand_btn expand_btn_state_2">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul class="nav_bar">
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-bell"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-lightbulb"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-shopping-cart"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <span><a href="communitypage.html" style="text-decoration: none;">Explore Communities</a></span>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/bgmi.jpg" alt="">
+    
+                    <div class="box">
+                        <h1>Connecting <span class="tagline">Minds</span> , Sharing <span class="tagline">Moments</span></h1>
                     </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/deadpool.jpg" alt="">
-                    </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/football.jpeg" alt="">
-                    </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/naruto.jpg" alt="">
-                    </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/random.jpeg" alt="">
-                    </div>
-                    <div class="community-circle" onclick="OpenCom()">
-                        <img src="images/pokemon.jpeg" alt="">
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
-
-        <nav class="navbar">
-            <div class="userprofile" onclick="openProf()">
-                <img src="javascript/Images/profile_pic.jpg" alt="">
-            </div>
-            <ul>
-                <li><i class="material-icons" style="font-size: 32px;"><a href="#home">home</a></i></li>
-                <li><i class="material-icons" style="font-size: 32px;"><a href="Contentfeed.html">view_quilt</a></i></li>
-                <li><i class="material-icons" style="font-size: 32px;"><a href="friends.html">people</a></i></li>
-                <li><i class="material-icons" style="font-size: 32px;"><a href="communitypage.html">chat</a></i></li>
-            </ul>
-            <button class="signup">
-                <a href="login.html">Login</a>
-            </button>
-        </nav>
-    </div>
+    </section>
     <script>
-        function OpenCom(){
-            window.location.href = "communitypage.html";
-        }
-        function openProf(){
-            window.location.href = "Userprofile.html";
-        }
+        const sidebar = document.querySelector(".sidebar");
+        const sidebarToggle = document.querySelector(".expand_btn");
+        const boxHead = document.querySelector(".box");
+
+        sidebarToggle.addEventListener("click" , function(){
+            sidebar.classList.toggle("inactive");
+            sidebarToggle.classList.toggle("expand_btn_state_2");
+            sidebarToggle.classList.toggle("fa-change_persp");
+            boxHead.classList.toggle("box_state_2");
+        })
     </script>
 </body>
 </html>

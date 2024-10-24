@@ -1,64 +1,229 @@
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('../images/wp14345948-angled-wave-wallpapers.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Great+Vibes&display=swap');
+:root 
+{
+    --mainBackground: #091921;
+    --primaryFont: 'Great Vibes' , cursive;
+    --secondaryFont: "Comic Neue", cursive;
+}
+*
+{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-.form-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+body
+{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background: var(--mainBackground);
+    align-items: center;
+    justify-content: center;
+}
+body::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(#e91e63 , #ffc107);
+    clip-path: circle(22% at 30% 20%);
+}
+body::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#fff , #da00ff);
+    clip-path: circle(20% at 70% 90%);
+}
+section
+{
+    height:500px;
+    width:64.5%;
+    z-index: 10;
+    border-radius: 16px;
+}
+.container
+{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    border-radius: 16px;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(84, 84, 84, 0.2) , 
+                0 0 10px rgba(84, 84, 84, 0.3) ,
+                0 0 30px rgba(84, 84, 84, 0.6) ,
+                0 0 60px rgba(84, 84, 84, 0.6);
+}
+.loginForm
+{
+    width: 57%;
+    height: 100%;
+}
+.sideContainer
+{
+    border-radius: 16px;
+    overflow: hidden; 
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) , 
+                0 0 10px rgba(0, 0, 0, 0.3) ,
+                0 0 15px rgba(0, 0, 0, 0.3) ,
+                0 0 20px rgba(0, 0, 0, 0.3); */
+}
+.sideContainer img
+{
+    height: 100%;
+    width: auto;   
+}
+.loginForm h1
+{
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: var(--primaryFont);
     text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
-
-.form-container h2 {
-    margin-bottom: 20px;
+.loginForm h1 span
+{
+    transition: 2s;
 }
-
-.form-container label {
-    display: block;
-    margin-bottom: 8px;
+.loginForm h1 span:hover
+{
+    cursor: grab;
+    text-shadow: 0 0 5px #d549ee71 , 
+                0 0 10px #d549ee71 ,
+                0 0 15px #d549ee71 ,
+                0 0 20px #d549ee71;
+    transition: 0s;
+}
+.loginForm h3
+{
+    font-family: var(--secondaryFont);
+    padding: 10px 15px 0;
+}
+.loginForm .loginHead
+{
+    font-family: var(--secondaryFont);
     text-align: left;
 }
-
-.form-container input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.form1
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    width: fit-content;
+}
+.form1 label
+{
+    font-family: var(--secondaryFont);
+    color: #333;
+    font-weight: 400;
 }
 
-.form-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
+.form1 input
+{
+    height: 40px;
+    width: 400px;
+    font-family: var(--secondaryFont);
+    color: #000;
     border-radius: 4px;
+    font-size: 20px;
+    border: 1px;
+    padding: 10px;
+    background: #DAFFF7;
+    margin-bottom: 15px;
+}
+.passholder
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.loginForm button
+{
+    position: relative;
+    transform: translate(-50%);
+    left: 37%;
+    margin-top: 15px 0;
+    height: 34px;
+    width: 124px;
+    border-radius: 6px;
+    border: 2px;
+    color: white;
+    background: #da00ff;
+    font-family: var(--secondaryFont);
+    font-size: 18px;
+    font-weight: 400;
+}
+.socialHeader
+{
+    position: relative;
+    width: fit-content;
+    transform: translateX(-50%);
+    left: 37%;
+    margin: 10px;
+    font-family: var(--secondaryFont);
+    font-style: italic;
+    color: #333;
+}
+.socialLogos
+{
+    position: relative;
+    width: 400px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialLogos i
+{
+    color: #e91e63;
+    font-size: 34px;
+    transition: transform .4s ease-in;
+}
+.socialLogos i:hover
+{
+    color: #ffc107;
+    cursor: pointer;
+    transform: rotate(-30deg);
+    transform: scale(1.2) rotateX('35deg');
+}
+.signUpP
+{
+    position: absolute;
+    bottom: 0px;
+    left: 10%;
+    font-family: var(--secondaryFont);
+    color: #333;
+}
+.signUpP span
+{
+    font-family: var(--primaryFont);
+    color: #ffc107;
+    font-size:22px;
+}
+.signUpP span:hover
+{
+    color: #e91e63;
     cursor: pointer;
 }
-
-.form-container button:hover {
-    background-color: #218838;
+.passholder p
+{
+    color: #222;
+    font-family: var(--secondaryFont);
+    cursor: pointer;
 }
-
-.form-container p {
-    margin-top: 20px;
-}
-
-.form-container a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.form-container a:hover {
+.passholder p:hover
+{
     text-decoration: underline;
+    color: #333;
 }

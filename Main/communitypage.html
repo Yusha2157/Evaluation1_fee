@@ -3,43 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community 1</title>
-    <link rel="stylesheet" href="css styles/community1.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Communities</title>
+    <link rel="stylesheet" href="./css styles/community.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>  
-    <div class="chat-container">
-        <div class="chat-header">
-            <h2>Community 1</h2>
-            <div class="header-actions">
-                <button class="header-btn">Search</button>
-                <button class="header-btn"><a href="Homepage.html">Home</a></button>
-            </div>
+<body>
+    <div class="container">
+        <div class="home" onclick="home()">
+            <i class="fa-solid fa-house"></i>
         </div>
-        <div class="chat-messages" id="chatMessages">
-            <div class="message-item">
-                <div class="message-content">
-                    <p>Welcome to Community 1! This is a great place to connect and share.</p>
-                </div>
-                <div class="message-time">10:00 AM</div>
-            </div>
-            <div class="message-item own">
-                <div class="message-content">
-                    <p>Hi everyone!</p>
-                </div>
-                <div class="message-time">10:05 AM</div>
-            </div>
+        <header>
+            
+            <h1>Communities</h1>
+            <input type="text" id="searchBar" placeholder="Search communities..." onkeyup="searchCommunities()">
+            <select id="sortSelect" onchange="sortCommunities()">
+                <option value="name">Sort by Name</option>
+                <option value="category">Sort by Category</option>
+            </select>
+        </header>
+        <div class="community-categories">
+            <button onclick="filterByCategory('All')">All</button>
+            <button onclick="filterByCategory('Tech')">Tech</button>
+            <button onclick="filterByCategory('Sports')">Sports</button>
+            <button onclick="filterByCategory('Art')">Art</button>
         </div>
-        <div class="chat-input">
-            <textarea id="chatInput" placeholder="Type your message..."></textarea>
-            <button class="send-btn">Send</button>
-            <div class="input-actions">
-                <button class="action-btn"><img src="images/attach.png" alt="Attach"></button>
-                <button class="action-btn"><img src="images/voice.png" alt="Voice"></button>
-                <button class="action-btn"><img src="images/camera.png" alt="Camera"></button>
-            </div>
-        </div>
+        <ul id="communityList"></ul>
     </div>
-    <script src="javascript/chatscript.js"></script>
+
+    <script src="./javascript/comm.js">
+        
+    </script>
 </body>
 </html>

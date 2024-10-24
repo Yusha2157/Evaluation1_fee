@@ -2,27 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css styles/loginpage.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Interlink - Get Started</title>
+    <link rel="stylesheet" href="./css styles/loginpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="form-container">
-        <h2>Login</h2>
-        <form id="loginForm" >
-            <label for="email">Email:</label>
-            <input type="email" id="loginEmail" name="email" required>
+    <section>
+        <div class="container">
+            <div class="loginForm">
+                <h1 style="color: #ff00d7;"> <span>Connecting </span><span>Minds</span>, <span>Sharing</span> <span>Moments</span>.</h1>
+                <h3>Welcome to Interlink</h3>
+                <h1 class="loginHead">Log In</h1>
+                <form action="" class="form1">
+                    <label for="">Email : </label>
+                    <input type="email" placeholder="Enter your email">
+                    <div class="passholder">
+                        <label for="">Password : </label>
+                        <p>forgot password?</p>
+                    </div>
+                    <input type="password" name="" id="" placeholder="Password">
+                </form>
+                <button onclick="home()" style="cursor: pointer;">LOGIN <i class="fa fa-angles-right"></i></button>
+                <p class="socialHeader">or continue with</p>
+                <div class="socialLogos">
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p class="signUpP">dont have an account yet? <span>Sign Up </span></p>
+            </div>
+            <div class="sideContainer">
+                <img src="./images/Interlink.png" alt="">
+            </div>
+        </div>
+    </section>
 
-            <label for="password">Password:</label>
-            <input type="password" id="loginPassword" name="password" required>
-
-            <button type="submit" onclick="login()">Login</button>
-        </form>
-        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-    </div>
-
-    <script src="javascript/loginscript.js">
+    <script>
+        function home() {
+            window.location.href = "Homepage.html";
+        }
     </script>
-    
 </body>
 </html>

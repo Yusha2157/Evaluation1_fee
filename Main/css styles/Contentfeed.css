@@ -123,9 +123,10 @@ body{
 
 }
 .cflpsright{
-    /* background-image: url('../Images/cricket.webp'); */
+    background-image: none;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     width: 50%;
     height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 16% 100%);
@@ -133,6 +134,6 @@ body{
 .slideshowmask{
     height: 100%;
     width: 100%;
-    opacity: 0.3;
-    background: linear-gradient(To right,rgba(0, 0, 0, 0.841),rgba(0, 0, 0, 0.364),rgba(0, 0, 0, 0));
+    opacity: 1;
+    background: linear-gradient(To right,rgba(0, 0, 0, 0.956),rgba(0, 0, 0, 0.748),rgba(0, 0, 0, 0.512),rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.151),rgba(0, 0, 0, 0));
 }

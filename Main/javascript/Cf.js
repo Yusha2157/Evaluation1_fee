@@ -1,5 +1,5 @@
 let Topsearches = ["Cricket", "Marvel", "Spiderman" , "Javascript" , "Cyber Security"];
-let Imagelist = ["Images/cricket.webp", "../Images/Marvel.webp", "../Images/spiderman.webp", "../Images/Javascript.webp", "../Images/Cyber security.webp"]
+let Imagelist = ["../images/cricket.webp", "../images/Marvel.webp", "../images/spiderman.webp", "../images/Javascript.webp", "../images/Cyber security.webp"]
 var searchlist = document.querySelector(".topsearches");
 var searchBar = document.getElementById("cfsearchbar");
 
@@ -29,3 +29,4 @@ function ImageSlide(){
     i = (i + 1)%length;
     setTimeout(ImageSlide, 3000);
 }
+ImageSlide();
